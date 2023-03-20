@@ -5,29 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tela de Login</title>
+
     <style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: aqua;
+    * {
+        padding: 0;
+        margin: 0;
     }
-    div{
-        background-color: rgba(0,0,0,0.5);
+
+    body{
+        font-family: 'Inter', sans-serif;
+        background-color: white;
+    }
+
+    .div {
+        width: 100%;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);
-        padding: 80px;
-        border-radius: 15px;
         color:white;
     }
+
+    .div-input {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .login-title {
+        color: #08B0BB;  
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .text {
+        color: #8E8E8E;
+        font-size: 14px;
+        margin-top: 2%;
+    }
+
     input{
+        width: 100%;
         padding: 15px;
         border: none;
         outline: none;
+        border-bottom: 1px solid #08B0BB;
         font-size: 15px;
     }
+
     button{
-        background-color: dodgerblue;
+        background-color: #08B0BB;
         border: none;
         padding: 15px;
         width: 100%;
@@ -36,20 +62,84 @@
         font-size: 15px;
         cursor: pointer;
     }
+
     button:hover{
-        background-color: deepskyblue;
+        background-color: #08B0BB;
     }
+
+    .wave-1, .wave-2, .wave-3, .wave-4, .wave-5 {
+        position: absolute;
+        bottom: -2px;
+        width: 100%;
+    }
+
+    .wave-1 {
+        opacity: 0.3;
+        animation: move-l 5s infinite;
+    }
+
+    .wave-2 {
+        opacity: 0.4;
+        animation: move-l 5s infinite;
+    }
+
+    .wave-3 {
+        opacity: 0.5;
+        animation: move-l 5s infinite;
+    }
+
+    .wave-4 {
+        opacity: 0.6;
+        animation: move-l 5s infinite;
+    }
+
+    .wave-5 {
+        opacity: 0.1;
+        animation: move-l 5s infinite;
+    }
+
+    @keyframes move-l{
+        50%{
+            transform: translateY(15px);
+        }
+    }
+
     </style>
 </head>
 <body>
-    <div>
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
+    <div class="div">
+        <h1 class="login-title">LOGIN</h1>
 
+        <div class="div-input">
+            <input type="text" placeholder="Nome">
+            <br><br>
+            <input type="password" placeholder="Senha">
+            <p class="text">Não possui uma conta? Cadastre-se</p>
+            <br><br>
+            <button>Enviar</button>
+        </div>
     </div>
+
+    <footer>
+        <svg class="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#08B0BB" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,128C384,107,480,85,576,106.7C672,128,768,192,864,197.3C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <svg class="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#08B0BB" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,176C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,186.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <svg class="wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#08B0BB" fill-opacity="1" d="M0,160L48,186.7C96,213,192,267,288,277.3C384,288,480,256,576,213.3C672,171,768,117,864,101.3C960,85,1056,107,1152,133.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <svg class="wave-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#08B0BB" fill-opacity="1" d="M0,96L48,133.3C96,171,192,245,288,277.3C384,309,480,299,576,298.7C672,299,768,309,864,293.3C960,277,1056,235,1152,192C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <svg class="wave-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#08B0BB" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,101.3C384,107,480,181,576,192C672,203,768,149,864,144C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </footer>
 </body>
 </html>
