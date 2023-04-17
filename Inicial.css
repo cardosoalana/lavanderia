@@ -1,26 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
+    padding-top: 170px;
+}
+
+header {
+    height: 150px;
+    background-image: linear-gradient(#08B0BB, #08afbb);
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.ai-pera {
+    height: 10%;
+    width: 10%; 
+    padding: 1%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.title-div {
+    margin-top: 1%;
+    padding: 1%;
 }
 
 .title-home {
     font-size: 30px;
-    color: #464646;
+    color: white;
     text-align: center;
+    font-weight: bold;
 }
 
-.container {
-    background-color: #08B0BB;
-    border-radius: 60px 60px 0px 0px;
-    padding: 5%;
+.title-description {
+    font-size: 20px;
+}
+
+.list {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    margin: auto;
+  }
+  
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 65%;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #08afbb;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+  
+.next {
+    right: 20%;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 20%;
+} 
+  
+.prev:hover, .next:hover {
+    background-color:  #08afbb28;
+    border-radius: 50%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    display: inline-block;
+    margin-top: 150px;
+    background-color: #08B0BB;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #16676d;
+}
+  
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}  
+
+li {
+    list-style-type: none;
+}
+
+.item-maquina {
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;    
+    bottom: 0px;
 }
 
 .maquina {
+    position: relative;
     border-radius: 20px 60px 20px 20px;
     background-color: white;
     color: #464646;
@@ -28,6 +130,7 @@ body {
     margin-right: 25%;
     margin-bottom: 30%;
     width: 50%;
+    padding-bottom: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -55,15 +158,22 @@ body {
     font-style: oblique;
     border-radius: 50px;
     width: 40%;
-    height: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
 }
 
-.button-div {
-    padding-bottom: 5%;
+.status-text-avaliable {
+    background-color: #1dbb08;
+    color: white;
+    font-style: oblique;
+    border-radius: 50px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
 }
 
 button{
@@ -84,4 +194,58 @@ button{
 button:hover{
     background-color: #08B0BB;
     color: white;
+}
+
+.see-more-text {
+    padding: 10px;
+}
+
+.waves-inicial {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;    
+    top: 5%;
+    background-image: linear-gradient(#08B0BB, #08afbb3f);
+}
+
+.wave-1, .wave-2, .wave-3, .wave-4, .wave-5 {
+    width: 100%;
+    position: absolute;
+}
+.wave-1 {
+    opacity: 0.3;
+    animation: move-l 5s infinite;
+}
+
+.wave-2 {
+    opacity: 0.4;
+    animation: move-l 5s infinite;
+}
+
+.wave-3 {
+    opacity: 0.5;
+    animation: move-l 5s infinite;
+}
+
+.wave-4 {
+    opacity: 0.6;
+    animation: move-l 5s infinite;
+}
+
+.wave-5 {
+    animation: move-l 5s infinite;
+}
+
+@keyframes move-l{
+    50%{
+        transform: translateY(15px);
+    }
+}
+
+.footer-img {
+    border-radius: 10%;
+    background-color: #08afbb;
+    height: 200px;
+    width: 200px;
 }
