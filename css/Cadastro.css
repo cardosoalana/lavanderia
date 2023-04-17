@@ -1,7 +1,7 @@
-
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,42 +9,56 @@ body{
     background-color: white;
 }
 
-.div {
-    width: 100%;
+.wrapper {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color:white;
 }
 
-.div-input {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.login-title {
+.title {
     color: #08B0BB;  
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
 }
 
-.text {
+.wrapper-input{
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.sindico-bool{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.sindico-bool label{
+    color: #08B0BB;
+    font-size: 14px;
+}
+
+.noAccount {
     color: #8E8E8E;
     font-size: 14px;
-    margin-top: 2%;
+    margin-top: 10px;
 }
 
-input{
+.form{
+    margin: 0 auto;
+}
+
+.form input{
     width: 100%;
     padding: 15px;
     border: none;
     outline: none;
     border-bottom: 1px solid #08B0BB;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
-button{
+button.send{
     background-color: #08B0BB;
     border: none;
     padding: 15px;
@@ -53,15 +67,33 @@ button{
     color: white;
     font-size: 15px;
     cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.5s;
 }
 
-button:hover{
-    background-color: #08B0BB;
+.send:hover{
+    cursor: pointer;
+    background-color: #06737b;
+}
+
+.wrapper-input p{
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper-input p:hover{
+    transform: translatey(-1.5px);
+}
+footer{
+    overflow: hidden;
 }
 
 .wave-1, .wave-2, .wave-3, .wave-4, .wave-5 {
     position: absolute;
-    bottom: -2px;
+    bottom: -50px;
     width: 100%;
 }
 
