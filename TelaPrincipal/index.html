@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <!-- Coding by CodingLab | www.codinglabweb.com -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/32c3c1affa.js" crossorigin="anonymous"></script>
+        <title>Ai Péra</title>
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+                                        
+    </head>
+    <body>
+        <header>
+            <div class="corrector">
+                <div class="logout">
+                    <button><a href='../TelaInicial/index.html'>Sair </a></button>
+                </div><!-- logout -->
+                <div class="container">
+                    <div class="body">
+                        <h3>Bem vindo(a), Fulano de tal!</h3>
+                        <h1>Condomínio Rosa Cruz</h1>
+                    </div><!-- body -->
+                </div><!-- container -->
+            </div><!-- corrector -->
+              
+            <div class="waves">
+             <div class="wave" id="wave1"></div>
+             <div class="wave" id="wave2"></div>
+             <div class="wave" id="wave3"></div>
+             <div class="wave" id="wave4"></div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img width="10" src="images/maquina1.png" alt="" class="card-img">
+                                </div><!-- card-image -->
+                            </div><!-- image-content -->
+
+                            <div class="card-content">
+                                <h2 class="name">Máquina 1</h2>
+                                <div style="background-color:#F65050 ;" id="state" class="state">EM USO</div>
+                                <div class="inline">
+                                    <p class="description">Tipo: </p><p id="type" class="description">Lava e seca</p>
+                                </div>
+                                <div class="inline">
+                                    <p class="description">Capacidade: </p><p id="capacity" class="description">13Kg</p>
+                                </div>
+                                <button class="button"><a>Ver mais</a></button>
+                            </div><!-- card-content -->
+                        </div><!-- card swiper-slide -->
+                        
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/maquina2.png" alt="" class="card-img">
+                                </div>
+                            </div><!-- image-content -->
+
+                            <div class="card-content">
+                                <h2 class="name">Máquina 2</h2>
+                                <div style="background-color:#53d042;" id="state" class="state">DISPONÍVEL</div>
+                                <div class="inline">
+                                    <p class="description">Tipo: </p><p id="type" class="description">Lavadoura</p>
+                                </div>
+                                <div class="inline">
+                                    <p class="description">Capacidade: </p><p id="capacity" class="description">9Kg</p>
+                                </div>
+                                <button class="button"><a>Ver mais</a></button>
+                            </div><!-- card-content -->
+                        </div><!-- card swiper-slide -->
+                        
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                <img src="images/maquina3.png" alt="" class="card-img">
+                                </div>
+                            </div><!-- image-content -->
+
+                            <div class="card-content">
+                                <h2 class="name">Máquina 3</h2>
+                                <div style="background-color:#dfe52c;" id="state" class="state">FINALIZADA</div>
+                                <div class="inline">
+                                    <p class="description">Tipo: </p><p id="type" class="description">Secadora</p>
+                                </div>
+                                <div class="inline">
+                                    <p class="description">Capacidade: </p><p id="capacity" class="description">11Kg</p>
+                                </div>
+                                <button class="button"><a>Ver mais</a></button>
+                            </div>
+                        </div><!-- card-wrapper swiper-wrapper -->
+                    </div><!-- slide-content -->
+                </div><!-- slide-container swiper -->
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <footer>
+                <div class="info-single">
+                    <h1>Sobre o Ai Péra</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi dolorum corrupti quas vel,
+                    maiores quasi dolor quo iste fugiat similique obcaecati quisquam quos nisi perferendis delectus
+                    eius minima, quod repellendus.</p>
+                </div>
+                <div class="info-single">
+                    <h1>Desenvolvedores</h1>
+                    <p>Alana Cardoso</p>
+                    <p>Carlos Krueger</p>
+                    <p>Letícia Campos</p>
+                </div>
+                <div class="info-single">
+                    <p>Copyright Alunos Unibrasil © 2023. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <!-- JavaScript -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</html>
