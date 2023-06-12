@@ -9,23 +9,22 @@
     <title>Cadastrar</title>
 </head>
 
-
 <body>
     <div class="wrapper">
         <h1 class="title">LOGIN</h1>
 
         <div class="wrapper-input">
             <div class="form">
-                <input type="text" placeholder="Nome">
-                <input type="password" placeholder="Senha">
+                <input type="text" id="nomeInput" placeholder="Nome">
+                <input type="password" id="senhaInput" placeholder="Senha">
                 <button>
-                    <a class="send" >
+                    <a class="send" onclick="validarFormulario()">
                         Entrar
                     </a>
                 </button>
                 <div class="noAccount">
-                    <span>Nao possui uma conta?</span>
-                    <a href='../CadastroSindico/index.html'>Cadastre-se</a>
+                    <span>Não possui uma conta?</span>
+                    <a href="../CadastroSindico/index.html">Cadastre-se</a>
                 </div>
             </div><!-- form -->
         </div><!-- wrapper-input -->
@@ -39,5 +38,18 @@
          <div class="wave" id="wave4"></div>
         </div>
      </footer> 
+
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById("nomeInput").value;
+            var senha = document.getElementById("senhaInput").value;
+
+            if (nome.trim() === "" || senha.trim() === "") {
+                alert("Por favor, preencha todos os campos.");
+            } else {
+                window.location.href = "../TelaPrincipal/index.html";   
+            }
+        }
+    </script>
 </body>
 </html>
